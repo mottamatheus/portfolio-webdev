@@ -9,7 +9,7 @@ const Main: React.FC = () => {
   return (
     <Container>
       <TextSection>
-        <h1>Matheus Motta.</h1>
+        <h1>Matheus Motta</h1>
         <h2>Desenvolvedor Web & Internacionalista</h2>
         <p>
           Olá! Sou de Porto Alegre e estou me especializando em desenvolver

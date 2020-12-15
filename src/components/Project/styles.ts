@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import teste from '../../assets/siberian.png';
 
 export const Container = styled.div`
   width: 80vw;
@@ -11,20 +12,33 @@ export const Container = styled.div`
   justify-content: flex-end;
 `;
 
-export const Project = styled.div`
+export const ImageDiv = styled.a`
   width: 60%;
-  border-radius: 0.3rem;
   position: absolute;
+  border-radius: 0.3rem;
   left: 0;
-  z-index: -1;
+  z-index: 1;
   height: 35rem;
-  background-color: var(--text-secondary);
   box-shadow: 5px 6px 8px -4px rgba(0, 0, 0, 0.37);
+  transition: all 0.2s ease;
+
+  &:hover {
+    height: 36rem;
+  }
+
+  div {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 0.3rem;
+    background: url(${teste});
+  }
 `;
 
 export const About = styled.div`
   width: 50%;
   display: flex;
+  z-index: 5;
   flex-direction: column;
   text-align: right;
   align-items: flex-end;
