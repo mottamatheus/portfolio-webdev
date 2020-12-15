@@ -7,10 +7,7 @@ const Home: React.FC = () => {
       <Head>
         <title>Porfólio - Matheus Motta</title>
       </Head>
-
-      <main>
-        <h1>Hello, Motta</h1>
-      </main>
+      <main />
     </div>
   );
 };

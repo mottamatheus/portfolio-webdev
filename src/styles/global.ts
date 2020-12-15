@@ -4,8 +4,8 @@ export default createGlobalStyle`
   :root {
     font-size: 62.5%;
     --bg: #111515;
-    --text-primary: #eb3b5a;
-    --bg-card: #c3ccde;
+    --text-primary: #c3ccde;
+    --text-secondary: #eb3b5a;
   }
 
   * {
