@@ -45,6 +45,7 @@ export const MeSection = styled.div`
   width: 50%;
   min-width: 30rem;
   height: 70vh;
+  text-align: center;
   align-items: center;
   justify-content: center;
   top: 15%;
