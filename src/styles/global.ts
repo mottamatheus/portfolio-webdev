@@ -7,6 +7,11 @@ export default createGlobalStyle`
     --bg-card: #2a2e2e;
     --text-primary: #c3ccde;
     --text-secondary: #eb3b5a;
+    --image-shade: linear-gradient(
+        0deg,
+        rgba(235, 59, 90, 0.12),
+        rgba(235, 59, 90, 0.12)
+      );
   }
 
   * {

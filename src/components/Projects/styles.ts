@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import teste from '../../assets/siberian.png';
 
 export const Container = styled.div`
   width: 80vw;
@@ -10,28 +9,25 @@ export const Container = styled.div`
   flex-direction: row;
   position: relative;
   margin-bottom: 7rem;
-  justify-content: flex-end;
 `;
 
 export const ImageDiv = styled(motion.a)`
   width: 60%;
   position: absolute;
   border-radius: 0.3rem;
-  left: 0;
   z-index: 1;
   height: 35rem;
   box-shadow: 5px 6px 8px -4px rgba(0, 0, 0, 0.37);
   min-height: 100%;
-  background: linear-gradient(
-      0deg,
-      rgba(235, 59, 90, 0.12),
-      rgba(235, 59, 90, 0.12)
-    ),
-    url(${teste});
   background-size: cover;
   background-size: contain auto;
   background-repeat: no-repeat;
   transition: all 0.3s ease;
+
+  img {
+    width: 100%;
+    z-index: -1;
+  }
 
   svg {
     opacity: 0;
@@ -55,8 +51,6 @@ export const About = styled.div`
   display: flex;
   z-index: 5;
   flex-direction: column;
-  text-align: right;
-  align-items: flex-end;
   padding: 2rem;
   justify-content: center;
   height: 35rem;
@@ -70,18 +64,24 @@ export const About = styled.div`
   p {
     font-size: 1.7rem;
     color: var(--text-primary);
-    backdrop-filter: blur(4px);
     border-radius: 0.3rem;
     margin-bottom: 2rem;
     padding: 3rem;
+    backdrop-filter: blur(4px);
     background-color: rgba(42, 46, 46, 0.7);
     box-shadow: 5px 6px 8px -4px rgba(0, 0, 0, 0.37);
   }
 
-  span {
+  ul {
+    list-style: none;
     font-family: 'Roboto Mono', monospace;
     margin-bottom: 2rem;
     font-size: 1.4rem;
+
+    li {
+      display: inline-block;
+      margin-right: 2rem;
+    }
   }
 
   a {
@@ -108,7 +108,6 @@ export const ExternalLink = styled.div`
   width: 100%;
   transition: all 0.2s ease;
   backdrop-filter: blur(2px);
-
   border-radius: 0.3rem;
 
   &:hover {
