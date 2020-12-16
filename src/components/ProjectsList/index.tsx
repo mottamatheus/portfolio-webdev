@@ -1,6 +1,7 @@
 import React from 'react';
 import Project from '../Project';
-import { Container } from './styles';
+import ProjectLeft from '../ProjectLeft';
+import { Container, Title } from './styles';
 
 const ProjectsList: React.FC = () => {
   const projects = [
@@ -18,9 +19,11 @@ const ProjectsList: React.FC = () => {
   ];
   return (
     <Container>
+      <Title>Meus projetos</Title>
       <Project />
+      <ProjectLeft />
       <Project />
-      <Project />
+      <ProjectLeft />
     </Container>
   );
 };

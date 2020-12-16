@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import teste from '../../assets/siberian.png';
+import teste2 from '../../assets/skilldev.png';
 
 export const Container = styled.div`
   width: 80vw;
@@ -10,14 +10,14 @@ export const Container = styled.div`
   flex-direction: row;
   position: relative;
   margin-bottom: 7rem;
-  justify-content: flex-end;
+  justify-content: flex-start;
 `;
 
 export const ImageDiv = styled(motion.a)`
   width: 60%;
   position: absolute;
   border-radius: 0.3rem;
-  left: 0;
+  right: 0;
   z-index: 1;
   height: 35rem;
   box-shadow: 5px 6px 8px -4px rgba(0, 0, 0, 0.37);
@@ -27,7 +27,7 @@ export const ImageDiv = styled(motion.a)`
       rgba(235, 59, 90, 0.12),
       rgba(235, 59, 90, 0.12)
     ),
-    url(${teste});
+    url(${teste2});
   background-size: cover;
   background-size: contain auto;
   background-repeat: no-repeat;
@@ -55,8 +55,8 @@ export const About = styled.div`
   display: flex;
   z-index: 5;
   flex-direction: column;
-  text-align: right;
-  align-items: flex-end;
+  left: 0;
+  align-items: flex-start;
   padding: 2rem;
   justify-content: center;
   height: 35rem;
@@ -70,18 +70,24 @@ export const About = styled.div`
   p {
     font-size: 1.7rem;
     color: var(--text-primary);
-    backdrop-filter: blur(4px);
     border-radius: 0.3rem;
     margin-bottom: 2rem;
     padding: 3rem;
+    backdrop-filter: blur(4px);
     background-color: rgba(42, 46, 46, 0.7);
     box-shadow: 5px 6px 8px -4px rgba(0, 0, 0, 0.37);
   }
 
-  span {
+  ul {
+    list-style: none;
     font-family: 'Roboto Mono', monospace;
     margin-bottom: 2rem;
     font-size: 1.4rem;
+
+    li {
+      display: inline-block;
+      margin-right: 2rem;
+    }
   }
 
   a {

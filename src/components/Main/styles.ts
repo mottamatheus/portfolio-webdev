@@ -10,7 +10,7 @@ export const Container = styled.div`
   flex-direction: row;
 `;
 
-export const TextSection = styled.div`
+export const TextSection = styled(motion.div)`
   width: 50%;
   height: 100px;
   align-items: left;

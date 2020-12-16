@@ -2,13 +2,17 @@ import React from 'react';
 import Image from 'next/image';
 import { FaJs, FaReact, FaNodeJs } from 'react-icons/fa';
 import { SiTypescript, SiNextDotJs } from 'react-icons/si';
-
+import SocialButtons from '../SocialButtons';
 import { Container, TextSection, MeSection, Technologies } from './styles';
 
 const Main: React.FC = () => {
   return (
     <Container>
-      <TextSection>
+      <TextSection
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1, type: 'spring', stiffness: 120 }}
+      >
         <h1>Matheus Motta</h1>
         <h2>Desenvolvedor Web & Internacionalista</h2>
         <p>
@@ -44,6 +48,7 @@ const Main: React.FC = () => {
         </Technologies>
       </TextSection>
       <MeSection>
+        <SocialButtons />
         <Image src="/me.png" alt="me" width={500} height={620} />
       </MeSection>
     </Container>
