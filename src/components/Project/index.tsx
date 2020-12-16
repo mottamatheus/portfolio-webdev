@@ -1,14 +1,22 @@
 import React from 'react';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
-import { Container, ImageDiv, About } from './styles';
+import { Container, ImageDiv, About, ExternalLink } from './styles';
 
 const Project: React.FC = () => {
   return (
     <>
       <Container>
-        <ImageDiv href="http://www.uber.com" target="_blank" rel="noreferrer">
-          <div />
+        <ImageDiv
+          href="www.uber.com"
+          target="_blacnk"
+          rel="noreferrer"
+          whileHover={{ scale: 1.05 }}
+        >
+          <ExternalLink>
+            <FiExternalLink size={75} />
+          </ExternalLink>
         </ImageDiv>
+
         <About>
           <h4>Siberian</h4>
           <p>
