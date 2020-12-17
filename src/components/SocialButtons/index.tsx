@@ -51,7 +51,6 @@ const SocialButtons: React.FC = () => {
         whileTap={{ scale: 0.9 }}
       >
         <a href="mailto:matheusmottaq@gmail.com">
-          <textarea value="mathesmottaq@gmail.com" />
           <MdMail size={80} />
         </a>
       </motion.div>

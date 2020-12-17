@@ -12,11 +12,4 @@ export const Container = styled(motion.div)`
     color: var(--text-primary);
     transition: all 0.2s ease;
   }
-
-  textarea {
-    opacity: 0;
-    visibility: hidden;
-    text-decoration: none;
-    position: absolute;
-  }
 `;

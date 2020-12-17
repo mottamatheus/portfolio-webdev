@@ -81,6 +81,10 @@ export const About = styled.div`
     li {
       display: inline-block;
       margin-right: 2rem;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
     }
   }
 

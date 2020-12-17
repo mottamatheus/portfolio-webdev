@@ -3,37 +3,38 @@ import { FiGithub, FiExternalLink } from 'react-icons/fi';
 import { Container, ImageDiv, About, ExternalLink } from './styles';
 import teste2 from '../../assets/siberian.png';
 import teste from '../../assets/skilldev.png';
+import goPets from '../../assets/gopets.png';
 
 const Projects: React.FC = () => {
   const projects = [
     {
       id: 1,
-      title: 'Siberian',
+      title: 'GoPets',
       description:
-        'Nesse projeto me inspirei em criar uma "versão soviética" da Amazon. Possui as funcionalidades completas de um e-commerce, como adicionar e remover produtos, processamento de pagamento e autenticação de usuário. Idealizei também o logo dessa marca fictícia.',
-      technologies: ['Typescript', 'Node.js', 'CSS'],
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, quod quis repellendus ullam numquam et. Soluta consequuntur cupiditate vitae nemo aliquam assumenda ducimus magni quas eius! Error omnis voluptatum a ipsa. Inventore ',
+      technologies: ['React.js', 'Typescript', 'Node.js', 'styled-components'],
       repository: 'http.com.br',
       website: 'www.com.br',
-      image: `${teste2}`,
+      image: `${goPets}`,
     },
     {
       id: 2,
+      title: 'Siberian',
+      description:
+        'Nesse projeto me inspirei em criar uma "versão soviética" da Amazon. Possui as funcionalidades completas de um e-commerce, como adicionar e remover produtos, processamento de pagamento e autenticação de usuário. Idealizei também o logo dessa marca fictícia.',
+      technologies: ['Typescript', 'Node.js', 'CSS', 'HTML'],
+      repository: 'https://github.com/mottamatheus/siberian',
+      website: 'https://challenge-5f5c1.web.app/',
+      image: `${teste2}`,
+    },
+    {
+      id: 3,
       title: 'SkillDev',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, quod quis repellendus ullam numquam et. Soluta consequuntur cupiditate vitae nemo aliquam assumenda ducimus magni quas eius! Error omnis voluptatum a ipsa. Inventore ',
       technologies: ['Next.js', 'nodejs'],
-      repository: 'http.com.br',
-      website: 'www.com.br',
-      image: `${teste}`,
-    },
-    {
-      id: 3,
-      title: 'Spotifyer',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, quod quis repellendus ullam numquam et. Soluta consequuntur cupiditate vitae nemo aliquam assumenda ducimus magni quas eius! Error omnis voluptatum a ipsa. Inventore ',
-      technologies: ['Next.js', 'nodejs'],
-      repository: 'http.com.br',
-      website: 'www.com.br',
+      repository: 'https://github.com/mottamatheus/skilldev',
+      website: 'https://mottaskilldev.firebaseapp.com/',
       image: `${teste}`,
     },
     {
@@ -52,6 +53,7 @@ const Projects: React.FC = () => {
       {projects.map((project, index) =>
         index % 2 === 0 ? (
           <Container
+            key={project.id}
             style={{
               justifyContent: 'flex-end',
             }}
@@ -67,14 +69,14 @@ const Projects: React.FC = () => {
               <p>{project.description}</p>
               <ul>
                 {project.technologies.map(tech => (
-                  <li>{tech}</li>
+                  <li key={tech}>{tech}</li>
                 ))}
               </ul>
               <div>
-                <a href={project.repository}>
+                <a target="_blank" rel="noreferrer" href={project.repository}>
                   <FiGithub size={35} />
                 </a>
-                <a href={project.website}>
+                <a target="_blank" rel="noreferrer" href={project.website}>
                   <FiExternalLink size={35} />
                 </a>
               </div>
@@ -96,6 +98,7 @@ const Projects: React.FC = () => {
           </Container>
         ) : (
           <Container
+            key={project.id}
             style={{
               justifyContent: 'flex-start',
             }}
@@ -111,14 +114,14 @@ const Projects: React.FC = () => {
               <p>{project.description}</p>
               <ul>
                 {project.technologies.map(tech => (
-                  <li>{tech}</li>
+                  <li key={tech}>{tech}</li>
                 ))}
               </ul>
               <div>
-                <a href={project.repository}>
+                <a target="_blank" rel="noreferrer" href={project.repository}>
                   <FiGithub size={35} />
                 </a>
-                <a href={project.website}>
+                <a target="_blank" rel="noreferrer" href={project.website}>
                   <FiExternalLink size={35} />
                 </a>
               </div>
