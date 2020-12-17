@@ -1,9 +1,10 @@
 import React from 'react';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
 import { Container, ImageDiv, About, ExternalLink } from './styles';
-import teste2 from '../../assets/siberian.png';
-import teste from '../../assets/skilldev.png';
+import siberian from '../../assets/siberian.png';
+import skilldev from '../../assets/skilldev.png';
 import goPets from '../../assets/gopets.png';
+import elleos from '../../assets/elleos.png';
 
 const Projects: React.FC = () => {
   const projects = [
@@ -11,41 +12,47 @@ const Projects: React.FC = () => {
       id: 1,
       title: 'GoPets',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, quod quis repellendus ullam numquam et. Soluta consequuntur cupiditate vitae nemo aliquam assumenda ducimus magni quas eius! Error omnis voluptatum a ipsa. Inventore ',
-      technologies: ['React.js', 'Typescript', 'Node.js', 'styled-components'],
-      repository: 'http.com.br',
-      website: 'www.com.br',
+        'GoPets é uma plataforma de agendamento de banho e tosa para pet shops. Ao fazer login e ser autorizado pelo servidor, o usuário pode ver em sua agenda quais agendamentos possui para o dia e os horários disponíveis, facilitando a organização da pet shop. Os clientes também podem cadastrar seus pets e fazer agendamentos pela plataforma.',
+      technologies: ['React.js', 'Typescript', 'Node.js', 'SQLite', 'REST API'],
+      repository: 'https://github.com/mottamatheus/gopets',
+      website: 'https://github.com/mottamatheus/gopets',
       image: `${goPets}`,
     },
     {
       id: 2,
       title: 'Siberian',
       description:
-        'Nesse projeto me inspirei em criar uma "versão soviética" da Amazon. Possui as funcionalidades completas de um e-commerce, como adicionar e remover produtos, processamento de pagamento e autenticação de usuário. Idealizei também o logo dessa marca fictícia.',
-      technologies: ['Typescript', 'Node.js', 'CSS', 'HTML'],
+        'O conceito desse projeto é uma "versão soviética" da Amazon. Possui as funcionalidades completas de um e-commerce, como adicionar e remover produtos, processamento de pagamento e autenticação de usuário. Idealizei também o logo dessa marca fictícia.',
+      technologies: ['React.js', 'Firebase', 'Stripe', 'CSS'],
       repository: 'https://github.com/mottamatheus/siberian',
       website: 'https://challenge-5f5c1.web.app/',
-      image: `${teste2}`,
+      image: `${siberian}`,
     },
     {
       id: 3,
-      title: 'SkillDev',
+      title: 'Elleos',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, quod quis repellendus ullam numquam et. Soluta consequuntur cupiditate vitae nemo aliquam assumenda ducimus magni quas eius! Error omnis voluptatum a ipsa. Inventore ',
-      technologies: ['Next.js', 'nodejs'],
-      repository: 'https://github.com/mottamatheus/skilldev',
-      website: 'https://mottaskilldev.firebaseapp.com/',
-      image: `${teste}`,
+        'A elleos é uma plataforma que busca conectar instituições beneficentes e voluntários que queiram ajudar. Possui versão web e mobile, onde é possível cadastrar instituições ou consultar informações sobre elas. Ambas versões estão conectadas ao mesmo backend, facilitando o compartilhamento de informações entre as plataformas.',
+      technologies: [
+        'Typescript',
+        'React.js',
+        'React Native',
+        'Node.js',
+        'CSS',
+      ],
+      repository: 'https://github.com/mottamatheus/elleos',
+      website: 'https://github.com/mottamatheus/elleos',
+      image: `${elleos}`,
     },
     {
       id: 4,
-      title: 'Siberian',
+      title: 'SkillDev',
       description:
-        'Nesse projeto me inspirei em criar uma "versão soviética" da Amazon. Possui as funcionalidades completas de um e-commerce, como adicionar e remover produtos, processamento de pagamento e autenticação de usuário. Idealizei também o logo dessa marca fictícia.',
-      technologies: ['Typescript', 'Node.js', 'CSS'],
-      repository: 'http.com.br',
-      website: 'www.com.br',
-      image: `${teste2}`,
+        'Landing page de uma startup fictícia chamada SkillDev, a qual venderia uma plataforma de gerenciamento de times. Foi desenvolvida em React.js com Typescript. As imagens são do Unsplash e editadas no Photoshop para layout diferenciado.',
+      technologies: ['React.js', 'Typescript', 'styled-components'],
+      repository: 'https://github.com/mottamatheus/skilldev',
+      website: 'https://mottaskilldev.firebaseapp.com/',
+      image: `${skilldev}`,
     },
   ];
   return (

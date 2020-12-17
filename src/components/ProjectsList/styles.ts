@@ -9,4 +9,8 @@ export const Title = styled.h2`
   max-width: 120rem;
   margin: 0 auto;
   color: var(--text-secondary);
+
+  @media (max-width: 500px) {
+    font-size: 3rem;
+  }
 `;

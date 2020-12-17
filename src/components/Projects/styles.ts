@@ -24,6 +24,10 @@ export const ImageDiv = styled(motion.a)`
   background-repeat: no-repeat;
   transition: all 0.3s ease;
 
+  @media (max-width: 1150px) {
+    width: 100%;
+  }
+
   img {
     width: 100%;
     z-index: -1;
@@ -54,15 +58,34 @@ export const About = styled.div`
   padding: 2rem;
   justify-content: center;
   height: 35rem;
+  transition: all 0.2s ease;
+
+  @media (max-width: 900px) {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 110%;
+
+    color: var(--bg);
+    transition: all 0.2s ease;
+
+    svg {
+      color: var(--text-secondary);
+    }
+  }
 
   h4 {
     color: var(--text-secondary);
     font-size: 3.6rem;
     margin-bottom: 2rem;
+
+    @media (max-width: 500px) {
+      font-size: 3rem;
+    }
   }
 
   p {
     font-size: 1.7rem;
+    font-weight: 300;
     color: var(--text-primary);
     border-radius: 0.3rem;
     margin-bottom: 2rem;
@@ -70,6 +93,10 @@ export const About = styled.div`
     backdrop-filter: blur(4px);
     background-color: rgba(42, 46, 46, 0.7);
     box-shadow: 5px 6px 8px -4px rgba(0, 0, 0, 0.37);
+
+    @media (max-width: 500px) {
+      font-size: 1.2rem;
+    }
   }
 
   ul {
@@ -77,6 +104,12 @@ export const About = styled.div`
     font-family: 'Roboto Mono', monospace;
     margin-bottom: 2rem;
     font-size: 1.4rem;
+
+    @media (max-width: 500px) {
+      font-size: 1.2rem;
+      align-items: center;
+      justify-content: center;
+    }
 
     li {
       display: inline-block;
