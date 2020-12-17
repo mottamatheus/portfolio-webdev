@@ -11,7 +11,7 @@ const Main: React.FC = () => {
       <TextSection
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1, type: 'spring', stiffness: 120 }}
+        transition={{ delay: 0.5, type: 'spring', stiffness: 120 }}
       >
         <h1>Matheus Motta</h1>
         <h2>Desenvolvedor FullStack</h2>
@@ -21,9 +21,9 @@ const Main: React.FC = () => {
           usuário. Crio soluções com:
         </p>
         <Technologies
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5, type: 'spring', stiffness: 120 }}
+          initial={{ y: -150, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 2, type: 'spring', stiffness: 120 }}
         >
           <div>
             <FaReact size={40} />
@@ -47,7 +47,11 @@ const Main: React.FC = () => {
           </div>
         </Technologies>
       </TextSection>
-      <MeSection>
+      <MeSection
+        initial={{ y: -150, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.5, type: 'spring', stiffness: 120 }}
+      >
         <SocialButtons />
         <Image src="/me.png" alt="me" width={500} height={620} />
       </MeSection>

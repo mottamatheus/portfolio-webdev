@@ -8,6 +8,7 @@ export const Container = styled.div`
   margin: 0 auto;
   display: flex;
   flex-direction: row;
+  align-items: center;
 
   @media (max-width: 500px) {
     width: 90vw;
@@ -17,11 +18,8 @@ export const Container = styled.div`
 
 export const TextSection = styled(motion.div)`
   width: 50%;
-  height: 10rem;
   align-items: left;
   position: relative;
-  top: 38%;
-  transform: translateY(-50%);
 
   @media (max-width: 500px) {
     width: 100vw;
@@ -57,9 +55,6 @@ export const TextSection = styled(motion.div)`
   }
 
   @media (max-width: 1150px) {
-    top: 40%;
-    width: 100%;
-
     h1 {
       font-size: 5rem;
     }
@@ -73,7 +68,7 @@ export const TextSection = styled(motion.div)`
     }
 
     @media (max-width: 500px) {
-      top: 40%;
+      top: 10%;
       width: 90%;
 
       h1 {
@@ -93,14 +88,13 @@ export const TextSection = styled(motion.div)`
   }
 `;
 
-export const MeSection = styled.div`
+export const MeSection = styled(motion.div)`
   width: 50%;
   min-width: 30rem;
   height: 70vh;
   text-align: center;
   align-items: center;
   justify-content: center;
-  top: 15%;
   position: relative;
   transition: all 0.2s ease;
 
