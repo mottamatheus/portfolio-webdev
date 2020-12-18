@@ -1,6 +1,6 @@
 import React from 'react';
 import { FiGithub, FiExternalLink } from 'react-icons/fi';
-import { Container, ImageDiv, About, ExternalLink } from './styles';
+import { Title, Container, ImageDiv, About, ExternalLink } from './styles';
 import siberian from '../../assets/siberian.png';
 import skilldev from '../../assets/skilldev.png';
 import goPets from '../../assets/gopets.png';
@@ -57,6 +57,7 @@ const Projects: React.FC = () => {
   ];
   return (
     <>
+      <Title>Meus projetos</Title>
       {projects.map((project, index) =>
         index % 2 === 0 ? (
           <Container

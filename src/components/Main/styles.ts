@@ -21,11 +21,6 @@ export const TextSection = styled(motion.div)`
   align-items: left;
   position: relative;
 
-  @media (max-width: 500px) {
-    width: 100vw;
-    justify-content: center;
-  }
-
   span {
     font-family: 'Roboto Mono', sans-serif;
     font-size: 2rem;
@@ -51,7 +46,6 @@ export const TextSection = styled(motion.div)`
     font-weight: 300;
     width: 90%;
     margin-top: 5rem;
-    font-size: 1.8rem;
   }
 
   @media (max-width: 1150px) {
@@ -67,7 +61,7 @@ export const TextSection = styled(motion.div)`
       width: 100%;
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 1000px) {
       top: 10%;
       width: 90%;
 
@@ -80,8 +74,8 @@ export const TextSection = styled(motion.div)`
       }
 
       p {
-        font-size: 1.3rem;
-        width: 70%;
+        font-size: 1.2rem;
+        width: 75%;
         line-height: 1.7rem;
       }
     }
@@ -90,7 +84,6 @@ export const TextSection = styled(motion.div)`
 
 export const MeSection = styled(motion.div)`
   width: 50%;
-  min-width: 30rem;
   height: 70vh;
   text-align: center;
   align-items: center;
@@ -98,18 +91,24 @@ export const MeSection = styled(motion.div)`
   position: relative;
   transition: all 0.2s ease;
 
-  @media (max-width: 1150px) {
+  @media (max-width: 1000px) {
     position: absolute;
     opacity: 1;
-
-    svg {
-      width: 60%;
-      height: 50%;
-      transform: translate(40%, 50%);
-    }
+    width: 70%;
 
     img {
       opacity: 0.1;
+      width: 100%;
+    }
+
+    svg {
+      width: 6.5rem;
+      height: 6.5rem;
+
+      @media (max-width: 500px) {
+        width: 4.2rem;
+        height: 4.2rem;
+      }
     }
   }
 `;
@@ -154,5 +153,24 @@ export const Technologies = styled(motion.div)`
         font-size: 1rem;
       }
     }
+  }
+`;
+
+export const Scroll = styled(motion.div)`
+  display: flex;
+  position: absolute;
+  color: var(--text-secondary);
+  margin: 0 auto;
+  z-index: 7;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  bottom: 5%;
+  width: 80vw;
+
+  svg {
+    display: flex;
+    width: 10rem;
+    height: 10rem;
   }
 `;

@@ -33,16 +33,6 @@ export const ImageDiv = styled(motion.a)`
     z-index: -1;
   }
 
-  svg {
-    opacity: 0;
-    color: var(--text-secondary);
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: opacity 0.2s ease;
-  }
-
   &:hover {
     svg {
       opacity: 1;
@@ -94,8 +84,10 @@ export const About = styled.div`
     background-color: rgba(42, 46, 46, 0.7);
     box-shadow: 5px 6px 8px -4px rgba(0, 0, 0, 0.37);
 
-    @media (max-width: 500px) {
+    @media (max-width: 900px) {
+      color: var(--bg);
       font-size: 1.2rem;
+      background-color: rgba(42, 46, 46, 0);
     }
   }
 
@@ -146,8 +138,30 @@ export const ExternalLink = styled.div`
   transition: all 0.2s ease;
   backdrop-filter: blur(2px);
   border-radius: 0.3rem;
+  display: flex;
+
+  svg {
+    opacity: 0;
+    display: flex;
+    margin: auto;
+    color: var(--text-secondary);
+    transition: opacity 0.2s ease;
+  }
 
   &:hover {
     opacity: 1;
+  }
+`;
+
+export const Title = styled.h2`
+  font-size: 6rem;
+  text-align: center;
+  padding-bottom: 6rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  color: var(--text-secondary);
+
+  @media (max-width: 500px) {
+    font-size: 3rem;
   }
 `;

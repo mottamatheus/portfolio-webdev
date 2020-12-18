@@ -20,6 +20,10 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
+  p {
+    font-size: 1.8rem;
+  }
+
   body {
     font-family: 'Inter', sans-serif;
     color: var(--text-primary);
