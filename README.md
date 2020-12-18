@@ -4,7 +4,7 @@ Esse portfólio foi desenvolvido utilizando Next.js, ReactJS e Typescript. A est
 
 ## Iniciando o projeto
 
-Primeiro, é preciso começar o servidor de desenvolvimento utilize:
+Comece o servidor de desenvolvimento:
 
 ```bash
 npm run dev
@@ -12,9 +12,9 @@ npm run dev
 yarn dev
 ```
 
-Agora é só abrir o [http://localhost:3000](http://localhost:3000) para visualizar o portfólio.
+Abra [http://localhost:3000](http://localhost:3000) para visualizar o portfólio.
 
-Para fazer o processo de build digite na linha de comando:
+Para fazer o processo de build:
 
 ```bash
 npm run build

@@ -60,7 +60,7 @@ const Main: React.FC = () => {
         <MeSection
           initial={{ x: 150, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 1.5, type: 'spring', stiffness: 220 }}
+          transition={{ delay: 1.5, type: 'spring', stiffness: 50 }}
         >
           <Image src="/me.png" alt="me" width={500} height={620} />
           <SocialButtons />
