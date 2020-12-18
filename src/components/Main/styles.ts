@@ -86,6 +86,7 @@ export const MeSection = styled(motion.div)`
   width: 50%;
   height: 70vh;
   text-align: center;
+  display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -95,10 +96,12 @@ export const MeSection = styled(motion.div)`
     position: absolute;
     opacity: 1;
     width: 70%;
+    transition: all 0.2s ease;
 
     img {
       opacity: 0.1;
       width: 100%;
+      box-shadow: 5px 6px 8px -4px rgba(0, 0, 0, 0.37);
     }
 
     svg {
@@ -157,20 +160,18 @@ export const Technologies = styled(motion.div)`
 `;
 
 export const Scroll = styled(motion.div)`
-  display: flex;
   position: absolute;
   color: var(--text-secondary);
-  margin: 0 auto;
   z-index: 7;
-  text-align: center;
-  align-items: center;
+  display: flex;
+  width: 100%;
   justify-content: center;
   bottom: 5%;
-  width: 80vw;
+  margin: 0 auto;
 
   svg {
-    display: flex;
     width: 10rem;
     height: 10rem;
+    cursor: pointer;
   }
 `;

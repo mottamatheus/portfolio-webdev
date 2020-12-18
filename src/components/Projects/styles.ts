@@ -50,12 +50,10 @@ export const About = styled.div`
   height: 35rem;
   transition: all 0.2s ease;
 
-  @media (max-width: 900px) {
+  @media (max-width: 1150px) {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.7);
-    height: 110%;
-
-    color: var(--bg);
+    background-color: rgba(15, 15, 15, 0.8);
+    color: var(--text-primary);
     transition: all 0.2s ease;
 
     svg {
@@ -84,10 +82,12 @@ export const About = styled.div`
     background-color: rgba(42, 46, 46, 0.7);
     box-shadow: 5px 6px 8px -4px rgba(0, 0, 0, 0.37);
 
-    @media (max-width: 900px) {
-      color: var(--bg);
-      font-size: 1.2rem;
-      background-color: rgba(42, 46, 46, 0);
+    @media (max-width: 1150px) {
+      color: var(--text-primary);
+      font-size: 1.5rem;
+      background: none;
+      padding: 0;
+      box-shadow: none;
     }
   }
 

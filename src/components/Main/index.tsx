@@ -13,6 +13,12 @@ import {
 } from './styles';
 
 const Main: React.FC = () => {
+  const scrollDown = () => {
+    window.scrollTo({
+      top: 900,
+      behavior: 'smooth',
+    });
+  };
   return (
     <>
       <Container>
@@ -60,16 +66,16 @@ const Main: React.FC = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5, type: 'spring', stiffness: 120 }}
         >
-          <SocialButtons />
           <Image src="/me.png" alt="me" width={500} height={620} />
+          <SocialButtons />
         </MeSection>
-        <Scroll
-          animate={{ y: [10, -10, 10] }}
-          transition={{ repeat: Infinity, duration: 1 }}
-        >
-          <BiChevronsDown />
-        </Scroll>
       </Container>
+      <Scroll
+        animate={{ y: [10, -10, 10] }}
+        transition={{ repeat: Infinity, duration: 1 }}
+      >
+        <BiChevronsDown onClick={scrollDown} />
+      </Scroll>
     </>
   );
 };
