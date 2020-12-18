@@ -19,6 +19,16 @@ const Projects: React.FC = () => {
       image: `${goPets}`,
     },
     {
+      id: 4,
+      title: 'SkillDev',
+      description:
+        'Landing page de uma startup fictícia chamada SkillDev, a qual venderia uma plataforma de gerenciamento de times. Foi desenvolvida em React.js com Typescript com hospedagem no Firebase. As ilustrações são do site UI8.',
+      technologies: ['React.js', 'Typescript', 'styled-components', 'Firebase'],
+      repository: 'https://github.com/mottamatheus/skilldev',
+      website: 'https://mottaskilldev.firebaseapp.com/',
+      image: `${skilldev}`,
+    },
+    {
       id: 2,
       title: 'Siberian',
       description:
@@ -43,16 +53,6 @@ const Projects: React.FC = () => {
       repository: 'https://github.com/mottamatheus/elleos',
       website: 'https://github.com/mottamatheus/elleos',
       image: `${elleos}`,
-    },
-    {
-      id: 4,
-      title: 'SkillDev',
-      description:
-        'Landing page de uma startup fictícia chamada SkillDev, a qual venderia uma plataforma de gerenciamento de times. Foi desenvolvida em React.js com Typescript. As imagens são do Unsplash e editadas no Photoshop para layout diferenciado.',
-      technologies: ['React.js', 'Typescript', 'styled-components'],
-      repository: 'https://github.com/mottamatheus/skilldev',
-      website: 'https://mottaskilldev.firebaseapp.com/',
-      image: `${skilldev}`,
     },
   ];
   return (

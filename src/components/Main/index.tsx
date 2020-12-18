@@ -23,9 +23,9 @@ const Main: React.FC = () => {
     <>
       <Container>
         <TextSection
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5, type: 'spring', stiffness: 120 }}
+          initial={{ x: -150, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 1, type: 'spring', stiffness: 120 }}
         >
           <h1>Matheus Motta</h1>
           <h2>Desenvolvedor FullStack</h2>
@@ -34,11 +34,7 @@ const Main: React.FC = () => {
             aplicações web performáticas, escaláveis e com foco na experiência
             de usuário. Crio soluções com:
           </p>
-          <Technologies
-            initial={{ y: -150, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 2, type: 'spring', stiffness: 120 }}
-          >
+          <Technologies>
             <div>
               <FaReact size={40} />
               <p>ReactJS</p>
@@ -62,17 +58,18 @@ const Main: React.FC = () => {
           </Technologies>
         </TextSection>
         <MeSection
-          initial={{ y: -150, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.5, type: 'spring', stiffness: 120 }}
+          initial={{ x: 150, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 1.5, type: 'spring', stiffness: 220 }}
         >
           <Image src="/me.png" alt="me" width={500} height={620} />
           <SocialButtons />
         </MeSection>
       </Container>
       <Scroll
-        animate={{ y: [10, -10, 10] }}
-        transition={{ repeat: Infinity, duration: 1 }}
+        initial={{ visibility: 'hidden' }}
+        animate={{ visibility: 'visible', y: [10, -10, 10] }}
+        transition={{ delay: 2.5, repeat: Infinity, duration: 1 }}
       >
         <BiChevronsDown onClick={scrollDown} />
       </Scroll>

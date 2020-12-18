@@ -84,7 +84,6 @@ export const TextSection = styled(motion.div)`
 
 export const MeSection = styled(motion.div)`
   width: 50%;
-  height: 70vh;
   text-align: center;
   display: flex;
   align-items: center;
@@ -92,10 +91,15 @@ export const MeSection = styled(motion.div)`
   position: relative;
   transition: all 0.2s ease;
 
+  a {
+    margin-left: 1rem;
+  }
+
   @media (max-width: 1000px) {
     position: absolute;
     opacity: 1;
-    width: 70%;
+    width: 90%;
+    top: 15%;
     transition: all 0.2s ease;
 
     img {
@@ -173,5 +177,10 @@ export const Scroll = styled(motion.div)`
     width: 10rem;
     height: 10rem;
     cursor: pointer;
+
+    @media (max-width: 500px) {
+      width: 6rem;
+      height: 6rem;
+    }
   }
 `;

@@ -89,6 +89,10 @@ export const About = styled.div`
       padding: 0;
       box-shadow: none;
     }
+
+    @media (max-width: 500px) {
+      font-size: 1.2rem;
+    }
   }
 
   ul {
