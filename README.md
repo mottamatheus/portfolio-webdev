@@ -1,5 +1,12 @@
 
   <h1 align="center">Portfólio - Matheus Motta</h1>
+  
+  
+<p align="center">
+
+<img src="https://github.com/mottamatheus/portfolio-webdev/blob/main/src/assets/header.jpg" width="500" >
+</p>
+
 
 <p align="center">	
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/mottamatheus/portfolio-webdev">
@@ -11,6 +18,8 @@
 <p align="center">	
  
 Esse projeto foi desenvolvido utilizando Next.js, ReactJS e Typescript. A estilização de cada componente foi feita com styled-components e as animações com Framer Motion. O componente dos projetos possui renderização dinâmica, facilitando a adição, exclusão ou edição. O layout é responsivo para telas de diferentes dispositivos. Além de Typescript, utilizei Eslint e Prettier para deixar o código mais legível.
+
+O deploy foi feito pela Vercel e está disponível em https://portfolio-webdev.vercel.app/
 
 </p>
 
